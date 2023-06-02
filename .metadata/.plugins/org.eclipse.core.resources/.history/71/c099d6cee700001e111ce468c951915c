@@ -1,0 +1,12 @@
+package day28.com.ict.edu;
+
+public class Ex03_ObjectOutputStream {
+	public static void main(String[] args) {
+		// 1. 객체 만들기
+		Ex03_VO vo1 = new Ex03_VO("고길동", 27, "서울 마포구", true, 179.5);
+		Ex03_VO vo2 = new Ex03_VO("이길동", 21, "서울 용산구", false, 170.0);
+		Ex03_VO vo3 = new Ex03_VO("김길동", 17, "서울 강남구", true, 183.3);
+		Ex03_VO vo4 = new Ex03_VO("박길동", 33, "서울 서초구", false, 165.5);
+		Ex03_VO vo5 = new Ex03_VO("홍길동", 26, "서울 중랑구", true, 173.5);
+	}
+}

@@ -1,0 +1,53 @@
+package com.ict.edu;
+
+import java.util.Scanner;
+
+public class Ex06_Array {
+
+	public static void main(String[] args) {
+		// 스캐너로 입력받고, 학급인원도 정해서 순위 매기기
+		Scanner scan = new Scanner(System.in);
+		
+		String[] name = new String[5];
+		for (int j = 0; j < 5; j++) {
+			System.out.print("이름 : ");
+			 name = scan.next();
+			
+			System.out.print("국어 점수 : ");
+			int[] kor = { scan.nextInt() };
+
+			System.out.print("영어 점수 : ");
+			int[] eng = { scan.nextInt() };
+
+			System.out.print("수학 점수 : ");
+			int[] math = { scan.nextInt() };
+
+			int[] sum = new int[name.length];
+			double[] avg = new double[name.length];
+			String[] hak = new String[name.length];
+			
+			for (int i = 0; i < name.length; i++) {
+				sum[i] = kor[i] + eng[i] + math[i];
+				avg[i] = (int)(sum[i] / 3.0 * 10) / 10.0;
+				if(avg[i] >= 90) {
+					hak[i] = "A 학점";
+				}else if(avg[i] >= 80) {
+					hak[i] = "B 학점";
+				}else if(avg[i] >= 70) {
+					hak[i] = "C 학점";	
+				}else {
+					hak[i] = "F 학점";
+				}
+			}
+		}
+			
+		System.out.println("이름\t총점\t평균\t학점");
+		for (int i = 0; i < name.length; i++) {
+			System.out.print(name[i] + "\t");
+			System.out.print(sum[i] + "\t");
+			System.out.print(avg[i] + "\t");
+			System.out.print(hak[i] + "\t");
+			// System.out.println(rank[i]);
+		}
+	}
+}

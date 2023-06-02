@@ -1,0 +1,22 @@
+package com.ict.edu;
+
+public class Ex10_Array {
+	public static void main(String[] args) {
+		// 가변 길이
+		int[][] su = new int[3][];
+		
+		// int[][] su2 = new int[][];
+		// int[][] su3 = new int[][4];
+		
+		// 초기값을 고정길이 방식으로 주면 안됨 (오류발생)
+		su[0][0] = 10;
+		su[0][1] = 20;
+		
+		su[1][0] = 100;
+		su[1][1] = 200;
+		
+		su[2][0] = 1000;
+		su[2][1] = 2000;
+		
+	}
+}

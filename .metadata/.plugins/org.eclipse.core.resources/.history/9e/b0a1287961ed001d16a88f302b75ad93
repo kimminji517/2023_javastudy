@@ -1,0 +1,10 @@
+package com.ict.edu;
+
+public class Ex05_Array {
+	public static void main(String[] args) {
+		String[] name = {"홍", "김", "이", "박", "고"};
+		int [] kor = {80, 90, 80, 70, 100};
+		int [] eng = {85, 95, 75, 85, 95};
+		int [] math = {100, 95, 90, 100, 100};
+	}
+}

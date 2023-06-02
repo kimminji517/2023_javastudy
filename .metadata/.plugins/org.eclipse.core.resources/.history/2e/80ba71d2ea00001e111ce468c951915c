@@ -1,0 +1,7 @@
+package day28.com.ict.edu;
+
+// 객체 직렬화 : 쓰는것 / 객체 역직렬화 : 읽는것
+
+public class Ex03_ObjectInputStream {
+
+}

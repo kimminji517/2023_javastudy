@@ -1,0 +1,89 @@
+package day26.com.ict.edu;
+
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.table.DefaultTableModel;
+
+	public class Homework_team_0531 extends JFrame {
+	    JPanel jp1, jp2;
+	    JTextField jtf1, jtf2, jtf3, jtf4, jtf5, jtf6;
+	    JLabel jl1, jl2, jl3, jl4, jl5, jl6;
+	    JTextArea jta;
+	    JTable jtb;
+	    JButton jb1, jb2, jb3, jb4, jb5, jb6;
+	    JScrollPane jsp;
+	    String[] select = {"이름", "전화", "주소", "회사"};
+	    JComboBox<String> jcomb;
+
+	    public Homework_team_0531() {
+	        super("");
+	        jp1 = new JPanel();
+	        jp1.setLayout(new GridLayout(5,1));
+	        jl1 = new JLabel("I D : ");
+	        jtf1 = new JTextField(15);
+	        jl2 = new JLabel("이름 : ");
+	        jtf2 = new JTextField(15);
+	        jl3 = new JLabel("전화 : ");
+	        jtf3 = new JTextField(15);
+	        jl4 = new JLabel("주소 : ");
+	        jtf4 = new JTextField(15);
+	        jl5 = new JLabel("회사 : ");
+	        jtf5 = new JTextField(15);
+
+	        jp1.add(jl1);
+	        jp1.add(jtf1);
+	        jp1.add(jl2);
+	        jp1.add(jtf2);
+	        jp1.add(jl3);
+	        jp1.add(jtf3);
+	        jp1.add(jl4);
+	        jp1.add(jtf4);
+	        jp1.add(jl5);
+	        jp1.add(jtf5);
+	        
+	        jp2 = new JPanel();
+	        jl6 = new JLabel("Address Book");
+	        
+	        String[]col = new String[] {"ID", "Name", "Phone", "Address", "Company"};
+	        jtb = new JTable();
+	        jp2.add(jl6);
+
+	        
+	        jb1 = new JButton("추가");
+	        jb2 = new JButton("삭제");
+	        jb3 = new JButton("수정");
+
+	        jtf6 = new JTextField(15);
+	        jb4 = new JButton("검색");
+	        jb5 = new JButton("지우기");
+	        jb6 = new JButton("전체보기");
+
+	        jta = new JTextArea(15, 60);
+	        jsp = new JScrollPane(jta, ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER,
+	                ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+	        jta.setLineWrap(true);
+	        jta.setEditable(false);
+
+	        add(jp1, BorderLayout.WEST);
+	        add(jp2, BorderLayout.EAST);
+
+	        setSize(500,500);
+	        setLocationRelativeTo(null);
+	        setDefaultCloseOperation(EXIT_ON_CLOSE);
+	        setVisible(true);
+	    }
+	    public static void main(String[] args) {
+	        new Homework_team_0531();
+	    }
+}

@@ -1,0 +1,24 @@
+package com.ict.edu;
+
+public class Ex02_Array {
+
+	public static void main(String[] args) {
+		// 선언과 생성을 한번에 처리하자
+		// char [] k1;        //선언
+		// k1 = new char[4]; // 생성
+		char [] k1 = new char[4];
+		
+		// 데이터 저장
+		k1[0] = 'J';
+		k1[1] = 'A';
+		k1[2] = 'V';
+		k1[3] = 65; // 0~65535 까지는 오류 없음
+		
+		// 하나씩 출력
+		for (int i = 0; i < k1.length; i++) {
+			System.out.println(k1[i]);
+		}
+		
+	}
+
+}

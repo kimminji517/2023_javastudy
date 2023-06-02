@@ -1,0 +1,24 @@
+package com.ict.edu;
+
+import java.util.Scanner;
+
+public class Ex06_Array {
+
+	public static void main(String[] args) {
+		// 스캐너로 입력받고, 학급인원도 정해서 순위 매기기
+	Scanner scan = new Scanner(System.in);
+	System.out.println("이름 : ");
+	String[] name = {scan.next()};
+	
+	System.out.println("국어 점수 : ");
+	int[] kor = {scan.nextInt()};
+	
+	System.out.println("영어 점수 : ");
+	int[] eng = {scan.nextInt()};
+	
+	System.out.println("수학 점수 : ");
+	int[] math = {scan.nextInt()};
+
+	}
+
+}

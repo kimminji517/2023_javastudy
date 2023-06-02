@@ -1,0 +1,19 @@
+package idbc.com.ict.edu;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Homework_DB_0530 extends JFrame{
+	JPanel jp1;
+	public Homework_DB_0530() {
+		super("DB 연동 정보");
+		
+		setSize(800, 500);
+		setLocationRelativeTo(null);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+	public static void main(String[] args) {
+		new Homework_DB_0530();
+	}
+}

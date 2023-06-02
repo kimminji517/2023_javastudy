@@ -1,0 +1,12 @@
+package day27.com.ict.edu;
+
+import javax.swing.JFrame;
+
+public class Homework_0601 extends JFrame{
+	public Homework_0601() {
+		
+	}
+	public static void main(String[] args) {
+		new Homework_0601();
+	}
+}

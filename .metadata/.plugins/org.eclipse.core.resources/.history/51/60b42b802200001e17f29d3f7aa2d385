@@ -1,0 +1,48 @@
+package day26.com.ict.edu;
+
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class Ex07_File_copy extends JFrame{
+	JPanel jp1, jp2;
+	JTextField jtf1, jtf2;
+	JButton jb;
+	String in_path, out_path;
+	
+	
+	public Ex07_File_copy() {
+		super("복사하기");
+		jp1 = new JPanel(new FlowLayout(FlowLayout.LEFT));
+		jp2 = new JPanel(new FlowLayout(FlowLayout.LEFT));
+		
+		jtf1 = new JTextField(15);
+		jtf2 = new JTextField(15);
+		
+		jb = new JButton("복사");
+		
+		jp1.add(new JLabel("복사위치 : "));
+		jp1.add(jtf1);
+		
+		jp2.add(new JLabel("사본위치 : "));
+		jp2.add(jtf2);
+		jp2.add(jb);
+		
+		setLayout(new GridLayout(2, 1));
+		add(jp1);
+		add(jp2);
+		
+		setSize(360,120);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		new Ex07_File_copy();
+	}
+}

@@ -1,0 +1,5 @@
+package jdbc.com.ict.edu2;
+
+public class Ex02_PreparedStatement_select {
+
+}
